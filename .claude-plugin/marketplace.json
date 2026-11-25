@@ -15,10 +15,10 @@
       "name": "ppt-master",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/hugohe3/ppt-master.git",
+        "url": "https://github.com/dakesan/ppt-master.git",
         "path": "skills"
       },
-      "description": "Generate natively editable PPTX from PDF / DOCX / URL / Markdown — real DrawingML shapes, text boxes, charts, and animations. Note: run `pip install -r requirements.txt` inside the installed plugin directory for the Python post-processing scripts to work.",
+      "description": "Fork of hugohe3/ppt-master with an audience-brief gate and slide-clarity rules. Generate natively editable PPTX from PDF / DOCX / URL / Markdown — real DrawingML shapes, text boxes, charts, and animations. Note: run `pip install -r requirements.txt` inside the installed plugin directory for the Python post-processing scripts to work.",
       "author": {
         "name": "Hugo He",
         "email": "heyug3@gmail.com",

@@ -8,7 +8,7 @@ description: Default Generate PPTX authority for source intake, planning, SVG au
 
 **Hard rule — runtime paths**: expand every linked or abbreviated package path from the entry-time `SKILL_DIR` anchor inside each tool call; never change CWD or inherit a prior shell working directory.
 
-**Default Core Pipeline**: `Initial Materials → [Fact Research] → Create Project → Template Candidate Preparation → Stage-1 Communication + Template Confirmation → [Template Installation] → Stage-2 Solution → [Image Acquisition] → Executor Live Preview → Quality Check → Post-processing → Export`
+**Default Core Pipeline**: `Initial Materials → [Fact Research] → Audience Brief → Create Project → Template Candidate Preparation → Stage-1 Communication + Template Confirmation → [Template Installation] → Stage-2 Solution → [Image Acquisition] → Executor Live Preview → Quality Check → Post-processing → Export`
 
 **Generate-specific execution discipline**:
 
@@ -46,7 +46,7 @@ The dispatcher writes standard Markdown plus a conversion profile beside each so
 
 **EMF/WMF from DOCX/PPTX**: embedded Office vectors land in `images/` with `image_manifest.json` as first-class §VIII assets. Never convert them to PNG; export embeds them at full vector fidelity, and a blank browser preview is expected ([`project.md`](../scripts/docs/project.md); export behavior in [`svg-pipeline.md`](../scripts/docs/svg-pipeline.md)).
 
-**✅ Checkpoint** — source content and any research pair are ready; proceed to Step 2.
+**✅ Checkpoint** — source content and any research pair are ready; run [`audience-brief`](stages/audience-brief.md) (a ⛔ BLOCKING stop only when an item is unresolved), then proceed to Step 2.
 
 ---
 
@@ -101,6 +101,8 @@ Read ${SKILL_DIR}/references/strategist.md
 Read ${SKILL_DIR}/references/plan-core.md
 Read ${SKILL_DIR}/references/canvas-formats.md
 ```
+
+Seed the Stage-1 communication contract from the confirmed audience brief by its handoff table ([`audience-brief.md`](stages/audience-brief.md) §3).
 
 | Trigger | Additional Strategist reference |
 |---|---|
@@ -226,6 +228,7 @@ Read ${SKILL_DIR}/references/executor-base.md              # REQUIRED core: exec
 Read ${SKILL_DIR}/references/shared-standards-core.md      # REQUIRED core: SVG contract + shared aesthetic/leading baseline
 Read ${SKILL_DIR}/references/semantic-svg.md               # REQUIRED core: semantic metadata boundary
 Read ${SKILL_DIR}/references/preset-shape-vocabulary.md    # REQUIRED core: complete 187-name preset vocabulary
+Read ${SKILL_DIR}/references/slide-clarity.md              # REQUIRED core (fork): page clarity rules judged against the audience brief
 Read ${SKILL_DIR}/references/modes/<resolved-id>.md        # one preset id, or each `mode_references` id
 Read ${SKILL_DIR}/references/visual-styles/<resolved-id>.md # one preset id, or each `visual_style_references` id
 # Triggered modules — evaluate executor-base.md's routing table over the §IX roster before P01

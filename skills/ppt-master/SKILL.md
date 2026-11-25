@@ -58,6 +58,17 @@ never compete with it.
 
 ---
 
+## Fork Additions (dakesan)
+
+Every Generate run (Default and Quick) passes the
+[`audience-brief`](workflows/stages/audience-brief.md) gate after sources are
+read and before planning: the agent states the reader, the goal, and how to
+convey it in its own words, and asks the user 2–3 questions when it cannot.
+Page authoring then follows [`slide-clarity.md`](references/slide-clarity.md).
+The selected route's authority file names the exact entry points.
+
+---
+
 ## Authored Expression Range
 
 **Reference — not a constraint**: what a generated page can carry. Text — inline

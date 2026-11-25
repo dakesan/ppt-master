@@ -165,9 +165,13 @@ Read ${SKILL_DIR}/templates/tables/table-vocabulary.md
 
 ---
 
+**Mandatory (fork) — audience brief before the roster**: once sources are read, run [`audience-brief`](../stages/audience-brief.md). It stops for 2–3 questions only when an item is unresolved; otherwise print the brief and continue.
+
+---
+
 ## 3. Direct SVG Authoring
 
-Read the execution core together, never file by file: [`shared-standards-core.md`](../../references/shared-standards-core.md), [`executor-base.md`](../../references/executor-base.md), [`semantic-svg.md`](../../references/semantic-svg.md), and [`preset-shape-vocabulary.md`](../../references/preset-shape-vocabulary.md) (complete, before P01). Then evaluate `executor-base.md`'s routing table once over the frozen roster and read every triggered module in the same batch (the `Any image` row loads its four files together); installed Layout/Deck structure adds [`pptx-structure-interface.md`](../../references/pptx-structure-interface.md). Keep the selected mode/style files: a custom applies one basis under its behavior, synthesizes several by their contributions, or follows the behavior alone. Reread anything only after a known file change or context invalidation.
+Read the execution core together, never file by file: [`shared-standards-core.md`](../../references/shared-standards-core.md), [`executor-base.md`](../../references/executor-base.md), [`semantic-svg.md`](../../references/semantic-svg.md), [`preset-shape-vocabulary.md`](../../references/preset-shape-vocabulary.md) (complete, before P01), and [`slide-clarity.md`](../../references/slide-clarity.md) (fork addition). Then evaluate `executor-base.md`'s routing table once over the frozen roster and read every triggered module in the same batch (the `Any image` row loads its four files together); installed Layout/Deck structure adds [`pptx-structure-interface.md`](../../references/pptx-structure-interface.md). Keep the selected mode/style files: a custom applies one basis under its behavior, synthesizes several by their contributions, or follows the behavior alone. Reread anything only after a known file change or context invalidation.
 
 **How executor-base binds Quick**: exactly as it binds Default except its `Default only` items — the persisted-plan handoff in §2 / §2.1 and the export hand-off in §6 — which Quick's transient §2 anchors, own checker gates, and export below replace; the Default gate cadence in `generate-pptx.md` Step 6 does not apply. Conditional authorities load on its routing table (Chart/Table branches, native data, formula, hyperlink). Chart/Table reference and final information model are independent signals, and selection never makes an object native-ready. Explicit user/template requirements and the resolved style override compatible aesthetic defaults, never technical boundaries, carrier eligibility, or native capability discovery.
 
